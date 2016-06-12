@@ -13,17 +13,17 @@ makeCacheMatrix <- function(x = matrix()) {
         ##      4. get the inverse
         ## this list is used as the input to InvCacheMatrix()
         
-        inv = NULL
-        set = function(m) {
+        inv <- NULL
+        set <- function(m) {
                 x <<- m
                 inv <<- NULL
         }
-        get = function() x
-        setinv = function(inverse) inv <<- inverse 
+        get <- function() x
+        setinv <- function(inverse) inv <<- inverse 
         
 
 
-        getinv = function() inv
+        getinv <- function() inv
         list(set=set, get=get, setinv=setinv, getinv=getinv)
 }
 
